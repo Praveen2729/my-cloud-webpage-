@@ -3,39 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cloud Webpage</title>
+    <title>My Caffe Webpage</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e6d2; /* Light coffee color */
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
         }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        p {
-            color: #666;
+
+        header {
+            background-color: #a0522d; /* Darker coffee color */
+            color: white;
+            padding: 20px;
             text-align: center;
+            width: 100%;
         }
+
         .container {
-           background-color: white;
-           padding: 20px;
-           border-radius: 8px;
-           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .menu-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .menu-item strong {
+            color: #a0522d;
+        }
+
+        footer {
+            background-color: #a0522d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Caffe</h1>
+    </header>
+
     <div class="container">
-        <h1>Welcome to My Cloud Webpage</h1>
-        <p>This page is hosted on GitHub Pages.</p>
-        <p>Enjoy your visit!</p>
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <strong>Espresso:</strong> $3.00
+            <p>A strong shot of coffee.</p>
+        </div>
+        <div class="menu-item">
+            <strong>Latte:</strong> $4.50
+            <p>Espresso with steamed milk and a little foam.</p>
+        </div>
+        <div class="menu-item">
+            <strong>Cappuccino:</strong> $4.00
+            <p>Espresso with steamed milk and a lot of foam.</p>
+        </div>
+        <div class="menu-item">
+            <strong>Mocha:</strong> $5.00
+            <p>Espresso, chocolate, and steamed milk.</p>
+        </div>
+        <div class="menu-item">
+            <strong>Tea:</strong> $2.50
+            <p>Selection of black, green, and herbal teas.</p>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 My Caffe</p>
+    </footer>
 </body>
 </html>
